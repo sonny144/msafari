@@ -69,4 +69,56 @@
     background: linear-gradient(to right, #E6B800, #FFD700);
     transform: scale(1.05);
 }
+.destination {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+}
 
+/* Namibia Section */
+#namibia {
+    background: url('../img/dichotoma.jpg') no-repeat center center/cover;
+}
+
+/* Botswana Section */
+#botswana {
+    background: url('../img/delta2.jpg') no-repeat center center/cover;
+}
+
+/* Tanzania Section */
+#tanzania {
+    background: url('../img/elephant.jpg') no-repeat center center/cover;
+}
+
+/* Destination Content */
+.destination-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.destination h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.destination p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay behind text for better visibility */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Smooth Scroll Effect */
+body {
+    scroll-behavior: smooth;
+}
