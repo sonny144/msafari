@@ -124,7 +124,6 @@ nav ul li a:hover {
     line-height: 1.6;
     color: #333;
 }
-
 /* Partners Section */
 .partners-section {
     padding: 50px 20px;
@@ -138,23 +137,23 @@ nav ul li a:hover {
 
 .partners-section .partner-item {
     display: inline-block;
-    width: 30%;
+    width: 30%; /* Approximately 3 items per row */
     margin: 20px 0;
+    text-align: center; /* Center images within the container */
 }
 
 .partners-section .partner-item img {
-    max-width: 100%;
-    height: auto;
+    width: 150px; /* Fixed width for images */
+    height: 200px; /* Fixed height for images */
+    object-fit: contain; /* Preserve aspect ratio and fit within bounds */
 }
 
-.partners-section .partner-item:nth-child(3n+1) {
-    text-align: left;
+/* Ensure consistent row height */
+.partners-section::after {
+    content: "";
+    display: table;
+    clear: both;
 }
-
-.partners-section .partner-item:nth-child(3n) {
-    text-align: right;
-}
-
 /* Smooth Scroll Effect */
 body {
     scroll-behavior: smooth;
