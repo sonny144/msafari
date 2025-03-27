@@ -133,7 +133,7 @@ nav ul li a:hover {
 
 .destination-item img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 8px; /* Optional: Rounded corners for images */
     margin-bottom: 15px;
 }
