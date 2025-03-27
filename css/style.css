@@ -154,6 +154,47 @@ nav ul li a:hover {
     display: table;
     clear: both;
 }
+/* Contact Information Section */
+.contact-info {
+    background-color: #f2f0ef; /* Light gray background */
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Add a top border */
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #090101;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #090101;
+}
+
+.contact-info p strong { /* Style the phone and email */
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #010810; /* Blue color for emphasis */
+}
+
+/* Optional: Add icons (requires font awesome or similar) */
+.contact-info p.phone::before {
+    content: "\f095"; /* Phone icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.contact-info p.email::before {
+    content: "\f0e0"; /* Email icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
 /* Smooth Scroll Effect */
 body {
     scroll-behavior: smooth;
