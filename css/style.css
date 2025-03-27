@@ -163,20 +163,20 @@ nav ul li a:hover {
 }
 
 .contact-info h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    font-size: 2rem; /* Reduced from 2.5rem */
+    margin-bottom: 25px; /* Slightly reduced margin */
     font-weight: 600;
     color: #090101;
 }
 
 .contact-info p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1rem; /* Reduced from 1.2rem */
+    margin-bottom: 12px; /* Slightly reduced margin */
     color: #090101;
 }
 
 .contact-info p strong { /* Style the phone and email */
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* Reduced from 1.4rem */
     font-weight: 600;
     color: #010810; /* Blue color for emphasis */
 }
@@ -186,14 +186,14 @@ nav ul li a:hover {
     content: "\f095"; /* Phone icon */
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    margin-right: 10px;
+    margin-right: 8px; /* Slightly reduced margin */
 }
 
 .contact-info p.email::before {
     content: "\f0e0"; /* Email icon */
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    margin-right: 10px;
+    margin-right: 8px; /* Slightly reduced margin */
 }
 /* Smooth Scroll Effect */
 body {
