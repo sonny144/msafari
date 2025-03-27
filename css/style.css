@@ -234,3 +234,33 @@ body {
     font-style: italic;
     color: #444;
 }
+/* Vehicles Section */
+.vehicles {
+    padding: 80px 20px;
+    text-align: left; /* Align text to the left */
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+.vehicle-item {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 40px; /* Add spacing between vehicle items */
+}
+
+.vehicle-item h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.vehicle-item ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.vehicle-item li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #555;
+}
