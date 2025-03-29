@@ -330,3 +330,57 @@ body {
     font-weight: 600;
     color: #333;
 }
+/* Destinations Page (Scoped) */
+.destinations-page-scoped {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.destinations-page-scoped .destination {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destinations-page-scoped .destination h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.destinations-page-scoped .general-slideshow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.destinations-page-scoped .general-slideshow img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.destinations-page-scoped .destination-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.destinations-page-scoped .destination-text {
+    text-align: left;
+    padding: 0 20px;
+    max-width: 600px;
+}
+
+.destinations-page-scoped .destination-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.destinations-page-scoped .destination-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
