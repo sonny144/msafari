@@ -334,7 +334,7 @@ body {
 .destinations-page-scoped {
     padding: 80px 20px;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color:#FAEBD7;
 }
 
 .destinations-page-scoped .destination {
@@ -355,7 +355,7 @@ body {
 }
 
 .destinations-page-scoped .general-slideshow img {
-    max-width: 30%;
+    max-width: 100%;
     height: auto;
     border-radius: 5px;
     margin: 0 10px;
