@@ -203,7 +203,8 @@ body {
 .about-us {
     padding: 80px 20px;
     text-align: left;
-    background-color: #f8f8f8;
+    background-color: #FAEBD7; /* Use destination page background color */
+    font-family: 'Arial', sans-serif; /* Use destination page font */
 }
 
 .about-content {
@@ -212,14 +213,15 @@ body {
 }
 
 .about-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2.8rem; /* Use larger heading size */
+    margin-bottom: 30px; /* Use adjusted margin */
     color: #333;
+    font-family: 'Georgia', serif; /* Use heading font */
 }
 
 .about-content p {
-    font-size: 1.1rem;
-    line-height: 1.7;
+    font-size: 1.15rem; /* Use adjusted paragraph font size */
+    line-height: 1.8; /* Use adjusted paragraph line height */
     margin-bottom: 30px;
     color: #555;
 }
@@ -233,6 +235,60 @@ body {
 .about-content p:last-of-type {
     font-style: italic;
     color: #444;
+}
+
+/* Why Choose Us Section (Updated) */
+.why-choose-us {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #FAEBD7; /* Use destination page background color */
+    font-family: 'Arial', sans-serif; /* Use destination page font */
+}
+
+.why-choose-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.why-choose-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Georgia', serif; /* Use heading font */
+}
+
+.why-choose-steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.why-choose-step {
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.step-number {
+    font-size: 2rem;
+    color: #444;;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.why-choose-step h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #444;
+    font-family: 'Times New Roman', serif; /* Use sub-heading font */
+}
+
+.why-choose-step p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #666;
 }
 /* Vehicles Section */
 .vehicles {
