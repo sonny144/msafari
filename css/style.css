@@ -239,7 +239,7 @@ body {
 
 /* Why Choose Us Section (Updated) */
 .why-choose-us {
-    padding: 80px 20px;
+    padding: 10px 20px 80px 20px;
     text-align: center;
     background-color: #FAEBD7; /* Use destination page background color */
     font-family: 'Arial', sans-serif; /* Use destination page font */
@@ -320,40 +320,40 @@ body {
     margin-bottom: 10px;
     color: #555;
 }
-/* Contact Page Section */
+/* Contact Page Section (Specific) */
 .contact-page {
     padding: 80px 20px;
     text-align: left;
     background-color: #f8f8f8;
 }
 
-.contact-info {
+.contact-page .contact-info {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.contact-info h2 {
+.contact-page .contact-info h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     color: #333;
 }
 
-.contact-info p {
+.contact-page .contact-info p {
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 30px;
     color: #555;
 }
 
-/* Contact Form */
-.contact-form label {
+/* Contact Form (Specific to Contact Page) */
+.contact-page .contact-form label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -361,8 +361,8 @@ body {
     border-radius: 5px;
 }
 
-.contact-form button {
-    background-color: #a88734; /* Earthy brown color (adjust as needed) */
+.contact-page .contact-form button {
+    background-color: #555 ;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -370,19 +370,19 @@ body {
     cursor: pointer;
 }
 
-/* Contact Details */
-.contact-details {
+/* Contact Details (Specific to Contact Page) */
+.contact-page .contact-details {
     margin-top: 40px;
     text-align: center;
 }
 
-.contact-details p {
+.contact-page .contact-details p {
     font-size: 1.2rem;
     margin-bottom: 15px;
     color: #555;
 }
 
-.contact-details p strong {
+.contact-page .contact-details p strong {
     font-weight: 600;
     color: #333;
 }
