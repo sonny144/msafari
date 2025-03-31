@@ -343,12 +343,12 @@ body {
 .destinations-page-scoped .destination {
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 80px; /* Increased margin between destinations */
+    margin-bottom: 80px;
 }
 
 .destinations-page-scoped .destination h2 {
     font-size: 3.5rem;
-    margin-bottom: 60px; /* Increased margin below heading */
+    margin-bottom: 60px;
     color: #333;
     font-family: 'Georgia', serif;
 }
@@ -356,7 +356,7 @@ body {
 .destinations-page-scoped .general-slideshow {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px; /* Increased margin below slideshow */
+    margin-bottom: 60px;
 }
 
 .destinations-page-scoped .general-slideshow img {
@@ -366,32 +366,26 @@ body {
     margin: 0 10px;
 }
 
-.destinations-page-scoped .destination-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increased min-width for columns */
-    gap: 60px; /* Increased gap between grid items */
+.destinations-page-scoped .destination-item {
+    padding: 40px 0;
     text-align: left;
 }
 
-.destinations-page-scoped .destination-item {
-    padding: 40px 0; /* Increased padding for grid items */
-}
-
 .destinations-page-scoped .destination-item h3 {
-    font-size: 2.5rem; /* Increased heading font size */
+    font-size: 2.5rem;
     margin-bottom: 20px;
     color: #333;
     font-family: 'Times New Roman', serif;
 }
 
 .destinations-page-scoped .destination-item p {
-    font-size: 1.2rem; /* Increased paragraph font size */
-    line-height: 1.9; /* Increased line height */
+    font-size: 1.2rem;
+    line-height: 1.9;
     color: #555;
 }
 
 .destinations-page-scoped hr {
     border: 1px solid #ddd;
-    margin: 80px auto; /* Increased margin for horizontal rule */
+    margin: 80px auto;
     max-width: 1200px;
 }
