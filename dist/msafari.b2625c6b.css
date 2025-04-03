@@ -1,0 +1,440 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif, Arial;
+}
+
+header {
+  z-index: 1000;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 50px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+#language-select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+}
+
+.logo img {
+  width: auto;
+  height: 60px;
+}
+
+nav ul {
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #333;
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+nav ul li a:hover {
+  color: gold;
+}
+
+.hero {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(#0006, #0006), url("namibian_sunset.9dc220a7.jpg") center / cover no-repeat;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  position: relative;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 800px;
+  position: relative;
+}
+
+.hero h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #00000080;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.hero p {
+  color: #ddd;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+.destinations-grid {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  display: flex;
+}
+
+.destination-item {
+  text-align: center;
+  width: 300px;
+}
+
+.destination-item img {
+  object-fit: cover;
+  border-radius: 8px;
+  max-width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.destination-content h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.destination-content p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.partners-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.partners-section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.partners-section .partner-item {
+  text-align: center;
+  width: 30%;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.partners-section .partner-item img {
+  object-fit: contain;
+  width: 150px;
+  height: 200px;
+}
+
+.partners-section:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.contact-info {
+  text-align: center;
+  background-color: #f2f0ef;
+  border-top: 1px solid #ddd;
+  padding: 60px 20px;
+}
+
+.contact-info h2 {
+  color: #090101;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contact-info p {
+  color: #090101;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.contact-info p strong {
+  color: #010810;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact-info p.phone:before {
+  content: "";
+  margin-right: 8px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.contact-info p.email:before {
+  content: "";
+  margin-right: 8px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+body {
+  scroll-behavior: smooth;
+  padding-top: 60px;
+}
+
+.about-us {
+  text-align: left;
+  background-color: #faebd7;
+  padding: 80px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-family: Georgia, serif;
+  font-size: 2.8rem;
+}
+
+.about-content p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.about-content h1:last-of-type {
+  color: #333;
+  font-weight: 600;
+}
+
+.about-content p:last-of-type {
+  color: #444;
+  font-style: italic;
+}
+
+.why-choose-us {
+  text-align: center;
+  background-color: #faebd7;
+  padding: 10px 20px 80px;
+  font-family: Arial, sans-serif;
+}
+
+.why-choose-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-choose-content h1 {
+  color: #333;
+  margin-bottom: 40px;
+  font-family: Georgia, serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.why-choose-steps {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+}
+
+.why-choose-step {
+  text-align: center;
+  max-width: 300px;
+  margin-bottom: 40px;
+}
+
+.step-number {
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.why-choose-step h3 {
+  color: #444;
+  margin-bottom: 15px;
+  font-family: Times New Roman, serif;
+  font-size: 1.8rem;
+}
+
+.why-choose-step p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.vehicles {
+  text-align: left;
+  background-color: #f8f8f8;
+  padding: 80px 20px;
+}
+
+.vehicle-item {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.vehicle-item h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.vehicle-item ul {
+  margin-left: 20px;
+  list-style: outside;
+}
+
+.vehicle-item li {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.contact-page {
+  text-align: left;
+  background-color: #f8f8f8;
+  padding: 80px 20px;
+}
+
+.contact-page .contact-info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-page .contact-info h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.contact-page .contact-info p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.contact-page .contact-form label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  display: block;
+}
+
+.contact-page .contact-form input, .contact-page .contact-form textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.contact-page .contact-form button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #555;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+}
+
+.contact-page .contact-details {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact-page .contact-details p {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.contact-page .contact-details p strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.destinations-page-scoped {
+  text-align: center;
+  background-color: #faebd7;
+  padding: 80px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.destinations-page-scoped .destination {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+}
+
+.destinations-page-scoped .destination h2 {
+  color: #333;
+  margin-bottom: 60px;
+  font-family: Georgia, serif;
+  font-size: 3.5rem;
+}
+
+.destinations-page-scoped .general-slideshow {
+  justify-content: center;
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.destinations-page-scoped .general-slideshow img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px;
+}
+
+.destinations-page-scoped .destination-item {
+  text-align: left;
+  padding: 40px 0;
+}
+
+.destinations-page-scoped .destination-item h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-family: Times New Roman, serif;
+  font-size: 2.5rem;
+}
+
+.destinations-page-scoped .destination-item p {
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.9;
+}
+
+.destinations-page-scoped hr {
+  border: 1px solid #ddd;
+  max-width: 1200px;
+  margin: 80px auto;
+}
+/*# sourceMappingURL=msafari.b2625c6b.css.map */
