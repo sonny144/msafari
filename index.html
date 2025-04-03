@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mufasa Travels</title>
+    <title id="mufasa-travels-title">Mufasa Travels</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -15,18 +15,22 @@
         </div>
         <nav>
             <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="vehicles.html">Vehicles</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a id="about-us" href="about.html">About Us</a></li>
+                <li><a id="vehicles" href="vehicles.html">Vehicles</a></li>
+                <li><a id="destinations" href="destinations.html">Destinations</a></li>
+                <li><a id="contact" href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="fr">French</option>
+        </select>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Mufasa Travels: Your African Adventure Awaits</h1>
-            <p>Crafting unique African travel experiences that blend adventure, comfort, and cultural immersion.</p>
+            <h1 id="hero-heading">Mufasa Travels: Your African Adventure Awaits</h1>
+            <p id="hero-paragraph">Crafting unique African travel experiences that blend adventure, comfort, and cultural immersion.</p>
         </div>
     </section>
 
@@ -34,30 +38,30 @@
         <div class="destination-item">
             <img src="img/delta1.jpg" alt="Namibia Destination">
             <div class="destination-content">
-                <h2>Namibia</h2>
-                <p>Explore the vast Namib Desert, the iconic dunes of Sossusvlei, and the wildlife of Etosha National Park.</p>
+                <h2 id="namibia-heading">Namibia</h2>
+                <p id="namibia-paragraph">Explore the vast Namib Desert, the iconic dunes of Sossusvlei, and the wildlife of Etosha National Park.</p>
             </div>
         </div>
 
         <div class="destination-item">
             <img src="img/delta2.jpg" alt="Botswana Destination">
             <div class="destination-content">
-                <h2>Botswana</h2>
-                <p>Experience the breathtaking Okavango Delta, Chobe National Park, and rich cultural heritage.</p>
+                <h2 id="botswana-heading">Botswana</h2>
+                <p id="botswana-paragraph">Experience the breathtaking Okavango Delta, Chobe National Park, and rich cultural heritage.</p>
             </div>
         </div>
 
         <div class="destination-item">
             <img src="img/elephant.jpg" alt="Tanzania Destination">
             <div class="destination-content">
-                <h2>Tanzania</h2>
-                <p>Witness the Serengeti migration, the majestic Mount Kilimanjaro, and the stunning beaches of Zanzibar.</p>
+                <h2 id="tanzania-heading">Tanzania</h2>
+                <p id="tanzania-paragraph">Witness the Serengeti migration, the majestic Mount Kilimanjaro, and the stunning beaches of Zanzibar.</p>
             </div>
         </div>
     </section>
 
     <section class="partners-section">
-        <h2>Our Partners</h2>
+        <h2 id="our-partners">Our Partners</h2>
         <div class="partner-item">
             <img src="img/fly_namibia.png" alt="Air Namibia Logo">
         </div>
@@ -79,12 +83,13 @@
     </section>
     <section class="contact-info">
         <div class="contact-content">
-            <h2>Contact Us</h2>
-            <p>Feel free to contact us at the number and email below:</p>
-            <p class="phone"><strong>+264 81 272 3921</strong></p>
-            <p class="email"><strong>info@mufasatravels.com</strong></p>
+            <h2 id="contact-us">Contact Us</h2>
+            <p id="contact-paragraph">Feel free to contact us at the number and email below:</p>
+            <p class="phone" id="phone"><strong>+264 81 272 3921</strong></p>
+            <p class="email" id="email"><strong>info@mufasatravels.com</strong></p>
         </div>
     </section>
-
+    
+    <script type="module" src="js/language.js"></script>
 </body>
 </html>
