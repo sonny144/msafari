@@ -2,7 +2,6 @@
   "name": "msafari",
   "version": "1.0.0",
   "description": "",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "i18next": "^24.2.3"
+    "i18next": "^24.2.3",
+    "i18next-http-backend": "^3.0.2"
   }
 }
