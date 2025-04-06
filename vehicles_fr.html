@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vehicles - Mufasa Travels</title>
+    <title>Véhicules - Mufasa Voyages</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -11,16 +11,16 @@
 
     <header>
         <div class="logo">
-            <a href="index.html">
-                <img src="img/mufasa_logo.png" alt="Mufasa Travels Logo">
+            <a href="fr_index.html">
+                <img src="img/mufasa_logo.png" alt="Logo de Mufasa Voyages">
             </a>
         </div>
         <nav>
             <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="vehicles.html" class="active">Vehicles</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="fr_about.html">À Propos de Nous</a></li>
+                <li><a href="vehicles_fr.html" class="active">Véhicules</a></li>
+                <li><a href="destinations_fr.html">Destinations</a></li>
+                <li><a href="contact_fr.html">Contact</a></li>
             </ul>
         </nav>
         <div class="language-dropdown" style="float: right; margin: 10px;">
@@ -33,36 +33,36 @@
 
     <section class="vehicles">
         <div class="vehicle-item">
-            <h2>V8 Toyota Land Cruiser</h2>
+            <h2>Toyota Land Cruiser V8</h2>
             <ul>
-                <li>Seating capacity: 10 passengers</li>
-                <li>Customized downward sliding window, ideal for photography</li>
-                <li>Pop-up roof</li>
-                <li>PA system and mic</li>
-                <li>Comfortable seats and air con</li>
-                <li>Electrical plug & USB</li>
-                <li>4-wheel drive</li>
+                <li>Capacité d'accueil : 10 passagers</li>
+                <li>Fenêtre coulissante vers le bas personnalisée, idéale pour la photographie</li>
+                <li>Toit ouvrant</li>
+                <li>Système de sonorisation et micro</li>
+                <li>Sièges confortables et climatisation</li>
+                <li>Prise électrique et USB</li>
+                <li>4 roues motrices</li>
             </ul>
         </div>
 
         <div class="vehicle-item">
             <h2>Prado</h2>
             <ul>
-                <li>Add Prado specifications here</li>
+                <li>Ajouter les spécifications du Prado ici</li>
             </ul>
         </div>
 
         <div class="vehicle-item">
             <h2>Benz</h2>
             <ul>
-                <li>Add Benz specifications here</li>
+                <li>Ajouter les spécifications du Benz ici</li>
             </ul>
         </div>
     </section>
     <section class="contact-info">
         <div class="contact-content">
-            <h2>Contact Us</h2>
-            <p>Feel free to contact us at the number and email below:</p>
+            <h2>Contactez-nous</h2>
+            <p>N'hésitez pas à nous contacter au numéro et à l'adresse e-mail ci-dessous :</p>
             <p class="phone"><strong>+264 81 272 3921</strong></p>
             <p class="email"><strong>info@mufasatravels.com</strong></p>
         </div>
@@ -73,8 +73,8 @@
 
         if (currentPage === 'vehicles.html') {
             document.getElementById('enOption').selected = true;
-            document.querySelector('nav ul li a[href="vehicles.html"]').classList.add('active');
         } else if (currentPage === 'vehicles_fr.html') {
+            document.querySelector('nav ul li a[href="vehicles_fr.html"]').classList.add('active');
             document.getElementById('frOption').selected = true;
         }
     </script>
