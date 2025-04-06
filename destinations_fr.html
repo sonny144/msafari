@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Mufasa Voyages</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/slideshow.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="fr_index.html">
+                <img src="img/mufasa_logo.png" alt="Logo de Mufasa Voyages">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about_fr.html">À Propos de Nous</a></li>
+                <li><a href="vehicles_fr.html">Véhicules</a></li>
+                <li><a href="destinations_fr.html" class="active">Destinations</a></li>
+                <li><a href="contact_fr.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="language-dropdown" style="float: right; margin: 10px;">
+            <select onchange="window.location.href=this.value;">
+                <option value="destinations.html" id="enOption">English</option>
+                <option value="destinations_fr.html" id="frOption">Français</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="destinations-page destinations-page-scoped">
+        <div class="destination">
+            <h2>Découvrez la Magie de la Namibie</h2>
+
+            <div class="general-slideshow">
+                <img src="img/soss.jpg" alt="Namibie 1">
+                <img src="img/africa.jpg" alt="Namibie 2">
+                <img src="img/oryx.jpg" alt="Namibie 3">
+            </div>
+
+            <div class="destination-item">
+                <h3>Sossusvlei</h3>
+                <p>Admirez les imposantes dunes de sable rouge de Sossusvlei, un spectacle naturel à couper le souffle. Explorez le paysage spectaculaire, où d'anciennes dunes s'élèvent au-dessus du sol désertique.</p>
+            </div>
+
+            <div class="destination-item">
+                <h3>Parc National d'Etosha</h3>
+                <p>Embarquez pour des safaris inoubliables à travers le parc national d'Etosha, abritant une faune diversifiée, notamment des éléphants, des lions, des léopards, des girafes et des zèbres. Découvrez la magie du règne animal africain.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="destination">
+            <h2>Explorez les Merveilles Naturelles du Botswana</h2>
+
+            <div class="general-slideshow">
+                <img src="img/water.jpg" alt="Botswana 1">
+                <img src="img/bots.jpg" alt="Botswana 2">
+                <img src="img/botswana.jpg" alt="Botswana 3">
+            </div>
+
+            <div class="destination-item">
+                <h3>Delta de l'Okavango</h3>
+                <p>Découvrez l'écosystème unique du delta de l'Okavango, un vaste réseau de voies navigables regorgeant de vie. Profitez de promenades en mokoro à travers les paisibles cours d'eau et rencontrez une faune diversifiée.</p>
+            </div>
+
+            <div class="destination-item">
+                <h3>Parc National de Chobe</h3>
+                <p>Explorez le parc national de Chobe, réputé pour son abondante population d'éléphants. Découvrez l'écosystème diversifié du parc, abritant des lions, des léopards, des hyènes et de nombreuses autres créatures captivantes.</p>
+            </div>
+
+            <div class="destination-item">
+                <h3>Pans de Makgadikgadi</h3>
+                <p>Découvrez les vastes et étranges pans de Makgadikgadi, un ancien lit de lac transformé en un paysage surréaliste. Explorez les salines et rencontrez une avifaune diversifiée et des adaptations désertiques uniques.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="destination">
+            <h2>Tanzanie : Où l'Aventure Rencontre la Détente</h2>
+
+            <div class="general-slideshow">
+                <img src="img/mount.jpg" alt="Tanzanie 1">
+                <img src="img/tanzania.jpg" alt="Tanzanie 2">
+                <img src="img/zanzibar.jpg" alt="Tanzanie 3">
+            </div>
+
+            <div class="destination-item">
+                <h3>Parc National du Serengeti</h3>
+                <p>Assistez à la Grande Migration dans le parc national du Serengeti, un spectacle naturel spectaculaire où des millions de gnous et de zèbres parcourent les prairies à la recherche de pâturages frais.</p>
+            </div>
+
+            <div class="destination-item">
+                <h3>Mont Kilimandjaro</h3>
+                <p>Lancez-vous dans une ascension difficile mais enrichissante vers le sommet du mont Kilimandjaro, le plus haut sommet d'Afrique. Admirez les vues à couper le souffle depuis le sommet, une expérience véritablement inoubliable.</p>
+            </div>
+
+            <div class="destination-item">
+                <h3>Zanzibar</h3>
+                <p>Détendez-vous sur les plages immaculées de Zanzibar, un paradis tropical aux eaux turquoise, au sable blanc et aux palmiers luxuriants. Profitez de la plongée avec tuba, de la plongée sous-marine et d'autres aventures aquatiques.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const currentPage = window.location.pathname.split('/').pop();
+
+        if (currentPage === 'destinations.html') {
+            document.getElementById('enOption').selected = true;
+        } else if (currentPage === 'destinations_fr.html') {
+            document.querySelector('nav ul li a[href="destinations_fr.html"]').classList.add('active');
+            document.getElementById('frOption').selected = true;
+        }
+    </script>
+
+</body>
+</html>

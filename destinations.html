@@ -20,10 +20,16 @@
             <ul>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="vehicles.html">Vehicles</a></li>
-                <li><a href="#">Destinations</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="language-dropdown" style="float: right; margin: 10px;">
+            <select onchange="window.location.href=this.value;">
+                <option value="destinations.html" id="enOption">English</option>
+                <option value="destinations_fr.html" id="frOption">Français</option>
+            </select>
+        </div>
     </header>
 
     <section class="destinations-page destinations-page-scoped">
@@ -101,6 +107,17 @@
             </div>
         </div>
     </section>
+
+    <script>
+        const currentPage = window.location.pathname.split('/').pop();
+
+        if (currentPage === 'destinations.html') {
+            document.getElementById('enOption').selected = true;
+            document.querySelector('nav ul li a[href="destinations.html"]').classList.add('active');
+        } else if (currentPage === 'destinations_fr.html') {
+            document.getElementById('frOption').selected = true;
+        }
+    </script>
 
 </body>
 </html>
