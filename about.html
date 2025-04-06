@@ -17,12 +17,18 @@
         </div>
         <nav>
             <ul>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
                 <li><a href="vehicles.html">Vehicles</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="language-dropdown" style="float: right; margin: 10px;">
+            <select onchange="window.location.href=this.value;">
+                <option value="about.html" id="enOption">English</option>
+                <option value="fr_about.html" id="frOption">Français</option>
+            </select>
+        </div>
     </header>
 
     <section class="about-us">
@@ -66,6 +72,17 @@
             <p class="email"><strong>info@mufasatravels.com</strong></p>
         </div>
     </section>
+
+    <script>
+        const currentPage = window.location.pathname.split('/').pop();
+
+        if (currentPage === 'about.html') {
+            document.querySelector('nav ul li a[href="about.html"]').classList.add('active');
+            document.getElementById('enOption').selected = true;
+        } else if (currentPage === 'fr_about.html') {
+            document.getElementById('frOption').selected = true;
+        }
+    </script>
 
 </body>
 </html>

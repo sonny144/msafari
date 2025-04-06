@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos de Nous - Mufasa Voyages</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="fr_index.html">
+                <img src="img/mufasa_logo.png" alt="Logo de Mufasa Voyages">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about_fr.html" class="active">À Propos de Nous</a></li>
+                <li><a href="vehicles_fr.html">Véhicules</a></li>
+                <li><a href="destinations_fr.html">Destinations</a></li>
+                <li><a href="contact_fr.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="language-dropdown" style="float: right; margin: 10px;">
+            <select onchange="window.location.href=this.value;">
+                <option value="about.html" id="enOption">English</option>
+                <option value="fr_about.html" id="frOption">Français</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="about-us">
+        <div class="about-content">
+            <h1>Notre Histoire</h1>
+            <p>Fondée à Windhoek, Mufasa Safaris and Tours CC est une agence de voyage locale avec plus de 15 ans d'expérience dans la création d'expériences de voyage exceptionnelles en Namibie, au Botswana et en Tanzanie. Notre fondateur, Faustin Kupasula, a commencé comme guide local passionné et a depuis construit une entreprise dédiée à la présentation de la beauté et de la richesse culturelle de l'Afrique australe aux voyageurs francophones et anglophones.</p>
+
+            <h1>Notre Mission : Tourisme Durable</h1>
+            <p>La Namibie, pionnière en matière de protection de l'environnement, inspire notre engagement envers un tourisme responsable. Nous nous efforçons de minimiser notre impact sur l'environnement, de soutenir les économies locales et de préserver le patrimoine culturel, en veillant à ce que nos voyages contribuent positivement aux destinations que nous explorons.</p>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="why-choose-content">
+            <h1>Création d'Expériences de Voyage Sur Mesure</h1>
+            <div class="why-choose-steps">
+                <div class="why-choose-step">
+                    <span class="step-number">1</span>
+                    <h3>Consulter & Planifier</h3>
+                    <p>Nous écoutons vos rêves et aspirations de voyage, en veillant à ce que votre voyage reflète vos intérêts et préférences uniques.</p>
+                </div>
+                <div class="why-choose-step">
+                    <span class="step-number">2</span>
+                    <h3>Concevoir & Personnaliser</h3>
+                    <p>Nous élaborons des itinéraires personnalisés, en tenant compte de votre budget, de votre style de voyage et des expériences souhaitées.</p>
+                </div>
+                <div class="why-choose-step">
+                    <span class="step-number">3</span>
+                    <h3>Exécuter & Profiter</h3>
+                    <p>Nous gérons chaque détail, des vols et de l'hébergement aux activités et aux transferts, afin que vous puissiez vous concentrer sur le plaisir de votre aventure africaine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="contact-content">
+            <h2>Contactez-nous</h2>
+            <p>N'hésitez pas à nous contacter au numéro et à l'adresse e-mail ci-dessous :</p>
+            <p class="phone"><strong>+264 81 272 3921</strong></p>
+            <p class="email"><strong>info@mufasatravels.com</strong></p>
+        </div>
+    </section>
+
+    <script>
+        const currentPage = window.location.pathname.split('/').pop();
+
+        if (currentPage === 'about.html') {
+            document.getElementById('enOption').selected = true;
+        } else if (currentPage === 'fr_about.html') {
+            document.querySelector('nav ul li a[href="about_fr.html"]').classList.add('active');
+            document.getElementById('frOption').selected = true;
+        }
+    </script>
+
+</body>
+</html>
