@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Mufasa Travels</title>
+    <title>Contactez-nous - Mufasa Voyages</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -11,16 +11,16 @@
 
     <header>
         <div class="logo">
-            <a href="index.html">
-                <img src="img/mufasa_logo.png" alt="Mufasa Travels Logo">
+            <a href="fr_index.html">
+                <img src="img/mufasa_logo.png" alt="Logo de Mufasa Voyages">
             </a>
         </div>
         <nav>
             <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="vehicles.html">Vehicles</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="about_fr.html">À Propos de Nous</a></li>
+                <li><a href="vehicles_fr.html">Véhicules</a></li>
+                <li><a href="destinations_fr.html">Destinations</a></li>
+                <li><a href="contact_fr.html" class="active">Contact</a></li>
             </ul>
         </nav>
         <div class="language-dropdown" style="float: right; margin: 10px;">
@@ -33,29 +33,29 @@
 
     <section class="contact-page">
         <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p>Start Your Unforgettable African Adventure.</p>
-            <p>Let Mufasa Travels be your guide to an extraordinary African adventure, filled with stunning landscapes, vibrant cultures, and unforgettable wildlife encounters.</p>
+            <h2>Contactez-nous</h2>
+            <p>Commencez Votre Aventure Africaine Inoubliable.</p>
+            <p>Laissez Mufasa Voyages être votre guide pour une aventure africaine extraordinaire, remplie de paysages magnifiques, de cultures vibrantes et de rencontres inoubliables avec la faune.</p>
 
             <form class="contact-form">
-                <label for="name">Your Name:</label>
+                <label for="name">Votre Nom :</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Your Email:</label>
+                <label for="email">Votre E-mail :</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="subject">Subject:</label>
+                <label for="subject">Sujet :</label>
                 <input type="text" id="subject" name="subject">
 
-                <label for="message">Your Message (optional):</label>
+                <label for="message">Votre Message (facultatif) :</label>
                 <textarea id="message" name="message"></textarea>
 
-                <button type="submit">Send Message</button>
+                <button type="submit">Envoyer le Message</button>
             </form>
 
             <div class="contact-details">
-                <p class="phone">Phone: <strong>+264 81 272 3921</strong></p>
-                <p class="email">Email: <strong>info@mufasatravels.com</strong></p>
+                <p class="phone">Téléphone : <strong>+264 81 272 3921</strong></p>
+                <p class="email">E-mail : <strong>info@mufasatravels.com</strong></p>
             </div>
         </div>
     </section>
@@ -65,8 +65,8 @@
 
         if (currentPage === 'contact.html') {
             document.getElementById('enOption').selected = true;
-            document.querySelector('nav ul li a[href="contact.html"]').classList.add('active');
         } else if (currentPage === 'contact_fr.html') {
+            document.querySelector('nav ul li a[href="contact_fr.html"]').classList.add('active');
             document.getElementById('frOption').selected = true;
         }
     </script>
