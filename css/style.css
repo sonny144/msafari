@@ -21,6 +21,14 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+#language-select {
+    /* Adjust the positioning and styling as needed */
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+}
 /* Logo Styling */
 .logo {
     display: flex;
@@ -32,164 +40,32 @@ header {
     width: auto;
 }
 
-/* Mobile Navigation Toggle */
-.mobile-nav-toggle {
-    display: none; /* Initially hide on larger screens */
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    z-index: 1001; /* Ensure it's above the navigation */
-}
-
-.hamburger {
-    position: relative;
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-    padding: 0;
-}
-
-.hamburger span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: #333;
-    border-radius: 2px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-}
-
-.hamburger span:nth-child(1) { top: 0px; }
-.hamburger span:nth-child(2) { top: 13px; }
-.hamburger span:nth-child(3) { top: 26px; }
-
-/* Active state of the hamburger (optional - for animation) */
-.hamburger.open span:nth-child(1) { top: 13px; transform: rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; left: -60px; }
-.hamburger.open span:nth-child(3) { top: 13px; transform: rotate(-45deg); }
-
-/* Primary Navigation */
-.primary-navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: white;
-    z-index: 1000;
-    display: flex; /* Set display flex by default for mobile */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 60px; /* Account for fixed header */
-    transform: translateX(100%); /* Initially slide off screen */
-    transition: transform 0.3s ease-out;
-}
-
-.primary-navigation[data-visible="true"] {
-    transform: translateX(0%); /* Slide in when visible */
-}
-
-.primary-navigation .nav-list {
+nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     margin: 0;
-    text-align: center;
+    padding: 0;
 }
 
-.primary-navigation .nav-list li {
-    margin-bottom: 20px;
+nav ul li {
+    display: inline;
 }
 
-.primary-navigation .nav-list li a {
+nav ul li a {
     color: #333;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    padding: 10px 20px;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
 }
 
-.primary-navigation .language-dropdown {
-    margin-top: 30px;
+nav ul li a:hover {
+    color: #FFD700;
 }
 
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .mobile-nav-toggle {
-        display: block; /* Show the hamburger button */
-    }
-
-    nav ul {
-        display: none !important; /* Ensure the original nav is hidden */
-    }
-    .primary-navigation .nav-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* The display: flex; is now set by default for .primary-navigation */
-
-    .primary-navigation .language-dropdown {
-        display: block; /* Show the language dropdown in the mobile nav */
-    }
-}
-
-/* Style the language dropdown for mobile */
-.primary-navigation .language-dropdown select {
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1.2rem;
-    background-color: #fff;
-}
-
-/* Larger screens - show the standard nav and hide the toggle/mobile nav */
-@media (min-width: 769px) {
-    .mobile-nav-toggle {
-        display: none !important;
-    }
-
-    .primary-navigation {
-        display: flex;
-        position: static;
-        flex-direction: row;
-        height: auto;
-        background: transparent;
-        justify-content: flex-end;
-        align-items: center;
-        transform: translateX(0%); /* Reset transform for larger screens */
-        padding-top: 0;
-    }
-
-    .primary-navigation .nav-list {
-        display: flex;
-        text-align: left;
-    }
-
-    .primary-navigation .nav-list li {
-        margin-left: 30px;
-        margin-bottom: 0;
-    }
-
-    .primary-navigation .nav-list li a {
-        font-size: 1.1rem;
-        padding: 8px 12px;
-    }
-
-    .primary-navigation .language-dropdown {
-        margin-left: 30px;
-        margin-top: 0;
-        display: block; /* Show on larger screens next to the nav */
-    }
-}
 /* Hero Section */
 .hero {
     position: relative;
@@ -200,7 +76,7 @@ header {
     text-align: center;
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/namibian_sunset.jpg') no-repeat center center/cover;
-    padding-top: 60px; /* Adjusted to account for fixed header */
+    padding-top: 80px;
 }
 
 /* Content on top of the background */
@@ -518,6 +394,12 @@ body {
     font-weight: 600;
     color: #333;
 }
+/* ... (your existing CSS) ... */
+
+/* Destinations Page (Scoped) */
+/* ... (your existing CSS) ... */
+/* Destinations Page (Scoped) */
+/* Destinations Page (Scoped) */
 .destinations-page-scoped {
     padding: 80px 20px;
     text-align: center;
