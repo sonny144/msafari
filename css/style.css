@@ -119,10 +119,6 @@ header {
     margin-top: 30px;
 }
 
-/* Hide the standard nav on mobile */
-nav ul {
-    display: none;
-}
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
