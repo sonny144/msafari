@@ -83,7 +83,7 @@ header {
     height: 100vh;
     background: white;
     z-index: 1000;
-    display: flex;
+    display: flex; /* Set display flex by default for mobile */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -134,9 +134,7 @@ nav ul {
         display: none !important; /* Ensure the original nav is hidden */
     }
 
-    .primary-navigation {
-        display: flex;
-    }
+    /* The display: flex; is now set by default for .primary-navigation */
 
     .primary-navigation .language-dropdown {
         display: block; /* Show the language dropdown in the mobile nav */
@@ -166,7 +164,7 @@ nav ul {
         background: transparent;
         justify-content: flex-end;
         align-items: center;
-        transform: translateX(0%);
+        transform: translateX(0%); /* Reset transform for larger screens */
         padding-top: 0;
     }
 
@@ -191,7 +189,6 @@ nav ul {
         display: block; /* Show on larger screens next to the nav */
     }
 }
-
 /* Hero Section */
 .hero {
     position: relative;
