@@ -520,7 +520,59 @@ body {
     font-weight: 600;
     color: #333;
 }
-/* ... (your existing CSS) ... */
+.destinations-page-scoped {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #FAEBD7;
+    font-family: 'Arial', sans-serif;
+}
 
-/* Destinations Page (Scoped) */
-/* ... (your
+.destinations-page-scoped .destination {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.destinations-page-scoped .destination h2 {
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+.destinations-page-scoped .general-slideshow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.destinations-page-scoped .general-slideshow img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.destinations-page-scoped .destination-item {
+    padding: 40px 0;
+    text-align: left;
+}
+
+.destinations-page-scoped .destination-item h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Times New Roman', serif;
+}
+
+.destinations-page-scoped .destination-item p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #555;
+}
+
+.destinations-page-scoped hr {
+    border: 1px solid #ddd;
+    margin: 80px auto;
+    max-width: 1200px;
+}
