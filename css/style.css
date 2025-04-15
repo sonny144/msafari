@@ -96,7 +96,6 @@ nav ul li a:hover {
 .hamburger-menu.open .bar:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
-
 /* Mobile Navigation Styles */
 @media (max-width: 768px) {
     nav {
@@ -109,8 +108,9 @@ nav ul li a:hover {
         z-index: 1000;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start; /* Align items to the left */
+        padding-top: 80px; /* Add space for the dropdown */
+        padding-left: 20px; /* Add some left padding */
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Delay visibility change */
@@ -124,27 +124,43 @@ nav ul li a:hover {
 
     nav ul {
         flex-direction: column;
-        align-items: center;
-        gap: 40px;
+        align-items: flex-start; /* Align links to the left */
+        gap: 20px; /* Reduce gap between links */
+        margin-top: 20px; /* Add space below the dropdown */
+        padding-right: 20px; /* Add some right padding */
     }
 
     nav ul li a {
-        font-size: 1.5rem;
+        font-size: 1.2rem; /* Adjust link font size if needed */
+        padding: 10px 0; /* Adjust link padding */
+        display: block; /* Make links full width for easier tapping */
     }
 
     .hamburger-menu {
         display: block; /* Show the hamburger icon on mobile */
+        z-index: 1002; /* Ensure it's above the mobile nav */
     }
 
     .logo {
-        z-index: 1001; /* Ensure logo stays above the opened menu */
+        z-index: 1002; /* Ensure logo stays above the opened menu */
     }
 
     .language-dropdown {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 1001;
+        display: none; /* Hide the original dropdown on mobile */
+    }
+
+    .language-dropdown-mobile {
+        margin-bottom: 30px; /* Add some space below the dropdown */
+        width: 100%; /* Make the dropdown take full width */
+    }
+
+    .language-dropdown-mobile select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        background-color: white;
+        width: 100%; /* Make the select take full width */
     }
 }
 
@@ -153,8 +169,10 @@ nav ul li a:hover {
     header {
         padding: 15px 20px;
         justify-content: space-between; /* Ensure logo and hamburger are at ends */
+        align-items: center; /* Vertically align logo and hamburger */
     }
 }
+
 /* Hero Section */
 .hero {
     position: relative;
