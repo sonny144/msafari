@@ -272,6 +272,30 @@ nav ul li a:hover {
     display: table;
     clear: both;
 }
+/* Mobile Partner Styles (Add this new @media block) */
+@media (max-width: 768px) {
+    .partners-section h2 {
+        font-size: 1.8rem; /* Adjust heading size for mobile */
+        margin-bottom: 20px; /* Adjust margin for mobile */
+    }
+
+    .partners-section .partner-item {
+        display: block; /* Stack the items */
+        width: 100%; /* Make each item full width */
+        margin: 20px 0; /* Adjust vertical margin */
+        text-align: center; /* Center the image */
+    }
+
+    .partners-section .partner-item img {
+        max-width: 80%; /* Make images responsive */
+        height: auto;
+        object-fit: contain;
+    }
+
+    .partners-section::after {
+        display: none; /* Hide clearfix as it's not needed with block display */
+    }
+}
 /* Contact Information Section */
 .contact-info {
     background-color: #f2f0ef; /* Light gray background */
