@@ -96,6 +96,9 @@ nav ul li a:hover {
 .hamburger-menu.open .bar:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
+.language-dropdown-mobile {
+    display: none;
+}
 /* Mobile Navigation Styles */
 @media (max-width: 768px) {
     nav {
