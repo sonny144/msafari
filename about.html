@@ -15,7 +15,18 @@
                 <img src="img/mufasa_logo.png" alt="Mufasa Travels Logo">
             </a>
         </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <nav>
+            <div class="language-dropdown-mobile">
+                <select onchange="window.location.href=this.value;">
+                    <option value="index.html" id="enOption">English</option>
+                    <option value="fr_index.html" id="frOption" selected>Français</option>
+                </select>
+            </div>
             <ul>
                 <li><a href="about.html" class="active">About Us</a></li>
                 <li><a href="vehicles.html">Vehicles</a></li>
@@ -83,6 +94,7 @@
             document.getElementById('frOption').selected = true;
         }
     </script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
