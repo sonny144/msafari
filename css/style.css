@@ -435,14 +435,14 @@ body {
 /* Vehicles Section */
 .vehicles {
     padding: 80px 20px;
-    text-align: left; /* Align text to the left */
-    background-color: #f8f8f8; /* Light gray background */
+    text-align: left;
+    background-color: #f8f8f8;
 }
 
 .vehicle-item {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
-    margin-bottom: 40px; /* Add spacing between vehicle items */
+    margin-bottom: 40px;
 }
 
 .vehicle-item h2 {
@@ -462,19 +462,71 @@ body {
     margin-bottom: 10px;
     color: #555;
 }
+
+/* Vehicles Slideshow - Default (Mobile) */
 .vehicles .general-slideshow {
-    display: flex; /* Could be useful if you decide to change the JS later */
-    justify-content: center; /* Center the currently visible image */
-    margin-bottom: 30px; /* Adjust margin as needed */
-    overflow: hidden; /* Good practice to contain images */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .vehicles .general-slideshow img {
-    max-width: 900px; /* Make images responsive within the container */
-    height: 600px;
-    border-radius: 5px; /* Optional: Add rounded corners */
-    margin: 0 10px; /* Optional: Add some horizontal space if needed */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 10px;
 }
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .vehicles {
+        display: flex;          /* Make .vehicles a flex container */
+        flex-direction: row;      /* Arrange items in a row */
+        flex-wrap: wrap;          /* Allow items to wrap if needed */
+        align-items: flex-start;  /* Align items to the start (top) */
+    }
+
+    .vehicle-grid {
+        display: flex;          /* Make .vehicle-grid a flex container */
+        flex-direction: row;      /* Arrange items in a row */
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .vehicles .general-slideshow {
+        width: 50%;         /* 50% width for the slideshow */
+        margin-bottom: 0;      /* Remove default bottom margin */
+        margin-right: 20px;    /* Add margin to the right of the slideshow */
+        position: relative;
+        height: 400px;
+        order: 2;
+    }
+
+    .vehicles .general-slideshow img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+    }
+
+    .vehicle-info {
+        width: 45%;        /* 45% width for the vehicle info container */
+        order: 1;
+    }
+
+    .vehicle-item {
+        width: 100%;    /* Vehicle items take full width within .vehicle-info */
+        margin-bottom: 20px;  /* Add bottom margin between vehicle items */
+    }
+}
+
+
+
 /* Contact Page Section (Specific) */
 .contact-page {
     padding: 80px 20px;
