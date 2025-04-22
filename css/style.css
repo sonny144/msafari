@@ -462,6 +462,19 @@ body {
     margin-bottom: 10px;
     color: #555;
 }
+.vehicles .general-slideshow {
+    display: flex; /* Could be useful if you decide to change the JS later */
+    justify-content: center; /* Center the currently visible image */
+    margin-bottom: 30px; /* Adjust margin as needed */
+    overflow: hidden; /* Good practice to contain images */
+}
+
+.vehicles .general-slideshow img {
+    max-width: 900px; /* Make images responsive within the container */
+    height: 600px;
+    border-radius: 5px; /* Optional: Add rounded corners */
+    margin: 0 10px; /* Optional: Add some horizontal space if needed */
+}
 /* Contact Page Section (Specific) */
 .contact-page {
     padding: 80px 20px;
