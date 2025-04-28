@@ -15,16 +15,16 @@
         </div>
         <nav>
             <ul>
-                <li><a id="about-us" href="fr_about.html">À propos de nous</a></li>
-                <li><a id="vehicles" href="vehicles_fr.html">Véhicules</a></li>
-                <li><a id="destinations" href="destinations_fr.html">Destinations</a></li>
-                <li><a id="contact" href="contact_fr.html">Contact</a></li>
+                <li><a id="about-us" href="/fr/about">À propos de nous</a></li>
+                <li><a id="vehicles" href="/fr/vehicles">Véhicules</a></li>
+                <li><a id="destinations" href="/fr/destinations">Destinations</a></li>
+                <li><a id="contact" href="/fr/contact">Contact</a></li>
             </ul>
         </nav>
         <div class="language-dropdown" style="float: right; margin: 10px;">
             <select onchange="window.location.href=this.value;">
-                <option value="index.html" id="enOption">English</option>
-                <option value="fr_index.html" id="frOption">Français</option>
+                <option value="/" id="enOption">English</option>
+                <option value="/fr" id="frOption">Français</option>
             </select>
         </div>
     </header>
@@ -89,19 +89,22 @@
             <h2 id="contact-us">Contactez-nous</h2>
             <p id="contact-paragraph">N'hésitez pas à nous contacter au numéro et à l'adresse e-mail ci-dessous :</p>
             <p class="phone" id="phone"><strong>+264 81 272 3921</strong></p>
-            <p class="email" id="email"><strong>mufasatravels.com</strong></p>
+            <p class="email" id="email">
+                <strong><a href="/">mufasatravels.com</a></strong>
+            </p>
         </div>
     </section>
 
     <script>
-        const currentPage = window.location.pathname.split('/').pop(); // Get the current filename
+        const currentPath = window.location.pathname;
 
-        if (currentPage === 'index.html') {
+        if (currentPath === '/' || currentPath === '/index.html') {
             document.getElementById('enOption').selected = true;
-        } else if (currentPage === 'fr_index.html') {
+        } else if (currentPath.startsWith('/fr')) {
             document.getElementById('frOption').selected = true;
         }
     </script>
 
 </body>
 </html>
+

@@ -4,6 +4,11 @@
       { "source": "/about", "destination": "/about.html" },
       { "source": "/vehicles", "destination": "/vehicles.html" },
       { "source": "/destinations", "destination": "/destinations.html" },
-      { "source": "/contact", "destination": "/contact.html" }
+      { "source": "/contact", "destination": "/contact.html" },
+      { "source": "/fr", "destination": "/fr_index.html" },
+      { "source": "/fr/about", "destination": "/fr_about.html" },
+      { "source": "/fr/vehicles", "destination": "/vehicles_fr.html" },
+      { "source": "/fr/destinations", "destination": "/destinations_fr.html" },
+      { "source": "/fr/contact", "destination": "/contact_fr.html" }
     ]
   }
