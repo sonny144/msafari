@@ -11,22 +11,22 @@
 
     <header>
         <div class="logo">
-            <a href="fr_index.html">
+            <a href="/fr">
                 <img src="img/mufasa_logo.png" alt="Logo de Mufasa Voyages">
             </a>
         </div>
         <nav>
             <ul>
-                <li><a href="fr_about.html" class="active">À Propos de Nous</a></li>
-                <li><a href="vehicles_fr.html">Véhicules</a></li>
-                <li><a href="destinations_fr.html">Destinations</a></li>
-                <li><a href="contact_fr.html">Contact</a></li>
+                <li><a id="about-us" href="/fr/about">À propos de nous</a></li>
+                <li><a id="vehicles" href="/fr/vehicles">Véhicules</a></li>
+                <li><a id="destinations" href="/fr/destinations">Destinations</a></li>
+                <li><a id="contact" href="/fr/contact">Contact</a></li>
             </ul>
         </nav>
         <div class="language-dropdown" style="float: right; margin: 10px;">
-            <select onchange="window.location.href=this.value;">
-                <option value="about.html" id="enOption">English</option>
-                <option value="fr_about.html" id="frOption">Français</option>
+            <select onchange="changeLanguage(this.value)">
+                <option value="/about" id="enOption">English</option>
+                <option value="/fr/about" id="frOption" selected>Français</option>
             </select>
         </div>
     </header>
@@ -76,10 +76,22 @@
     <script>
         const currentPage = window.location.pathname.split('/').pop();
 
-        if (currentPage === 'about.html') {
+        // Highlight the current page in the navigation
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            if (link.href.includes(currentPage)) {
+                link.classList.add('active');
+            }
+        });
+
+        // Set the selected language in the dropdown
+        function changeLanguage(languageUrl) {
+            window.location.href = languageUrl;
+        }
+
+        if (currentPage === 'about') {
             document.getElementById('enOption').selected = true;
-        } else if (currentPage === 'fr_about.html') {
-            document.querySelector('nav ul li a[href="fr_about.html"]').classList.add('active');
+        } else if (currentPage === 'fr/about') {
             document.getElementById('frOption').selected = true;
         }
     </script>
