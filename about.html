@@ -23,8 +23,8 @@
         <nav>
             <div class="language-dropdown-mobile">
                 <select onchange="window.location.href=this.value;">
-                    <option value="index.html" id="enOption">English</option>
-                    <option value="fr_index.html" id="frOption" selected>Français</option>
+                    <option value="/about" id="enOption">English</option>
+                    <option value="/fr/about" id="frOption" selected>Français</option>
                 </select>
             </div>
             <ul>
@@ -36,8 +36,8 @@
         </nav>
         <div class="language-dropdown" style="float: right; margin: 10px;">
             <select onchange="window.location.href=this.value;">
-                <option value="about.html" id="enOption">English</option>
-                <option value="fr_about.html" id="frOption">Français</option>
+                <option value="/about" id="enOption">English</option>
+                <option value="/fr/about" id="frOption">Français</option>
             </select>
         </div>
     </header>
@@ -87,10 +87,10 @@
     <script>
         const currentPage = window.location.pathname.split('/').pop();
 
-        if (currentPage === 'about.html') {
-            document.querySelector('nav ul li a[href="about.html"]').classList.add('active');
+        if (currentPage === 'about') {
+            document.querySelector('nav ul li a[href="/about"]').classList.add('active');
             document.getElementById('enOption').selected = true;
-        } else if (currentPage === 'fr_about.html') {
+        } else if (currentPage === 'fr/about') {
             document.getElementById('frOption').selected = true;
         }
     </script>
