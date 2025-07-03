@@ -1,104 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - Mufasa Travels</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  <style>
-    .confirmation-message {
-      display: none;
-      margin-top: 20px;
-      color: green;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - Mufasa Travels</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <a href="/">
-        <img src="img/mufasa_logo.png" alt="Mufasa Travels Logo"/>
-      </a>
-    </div>
-    <div class="hamburger-menu">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/vehicles">Vehicles</a></li>
-        <li><a href="/destinations">Destinations</a></li>
-        <li><a href="/contact" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="img/mufasa_logo.png" alt="Mufasa Travels Logo" />
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/vehicles">Vehicles</a></li>
+                <li><a href="/destinations">Destinations</a></li>
+                <li><a href="/contact" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="contact-page">
-    <div class="contact-info">
-      <h2>Contact Us</h2>
-      <p>Start Your Unforgettable African Adventure.</p>
-      <p>Let Mufasa Travels be your guide to an extraordinary African adventure, filled with stunning landscapes, vibrant cultures, and unforgettable wildlife encounters.</p>
+    <section class="contact-page">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Start Your Unforgettable African Adventure.</p>
+            <p>Let Mufasa Travels be your guide to an extraordinary African adventure, filled with stunning landscapes, vibrant cultures, and unforgettable wildlife encounters.</p>
 
-      <!-- ✅ UPDATED FORM START -->
-      <form class="contact-form" action="send-mail.php" method="POST" onsubmit="showConfirmation(event)">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required />
+            <form class="contact-form" action="https://formspree.io/f/mvgryqjy" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required />
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required />
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required />
 
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" />
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" />
 
-        <label for="message">Your Message (optional):</label>
-        <textarea id="message" name="message"></textarea>
+                <label for="message">Your Message (optional):</label>
+                <textarea id="message" name="message"></textarea>
 
-        <button type="submit" name="submit">Send Message</button>
-        <p class="confirmation-message" id="confirmation">✅ Thank you! Your message has been sent.</p>
-      </form>
-      <!-- ✅ UPDATED FORM END -->
+                <button type="submit">Send Message</button>
+            </form>
 
-      <div class="contact-details">
-        <p class="phone">Phone: <strong>+264 81 272 3921</strong></p>
-        <p class="email" id="email">
-          <a href="mailto:info@mufasasafaris.com" class="text-inherit"><strong>info@mufasasafaris.com</strong></a>
-        </p>
-      </div>
-    </div>
-  </section>
+            <div class="contact-details">
+                <p class="phone">Phone: <strong>+264 81 272 3921</strong></p>
+                <p class="email" id="email">
+                    <a href="mailto:info@mufasasafaris.com" class="text-inherit"><strong>info@mufasasafaris.com</strong></a>
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    const currentPage = window.location.pathname.split('/').pop();
-    if (currentPage === 'contact.html') {
-      document.querySelector('nav ul li a[href="/contact"]').classList.add('active');
-    }
+    <script>
+        const currentPage = window.location.pathname.split('/').pop();
 
-    function showConfirmation(event) {
-      event.preventDefault(); // prevent form from submitting immediately
-      const form = event.target;
-
-      fetch(form.action, {
-        method: "POST",
-        body: new FormData(form)
-      })
-      .then(response => {
-        if (response.ok) {
-          document.getElementById("confirmation").style.display = "block";
-          form.reset();
-        } else {
-          alert("Sorry, something went wrong. Please try again.");
+        if (currentPage === 'contact.html') {
+            document.getElementById('enOption').selected = true;
+            document.querySelector('nav ul li a[href="/contact"]').classList.add('active');
+        } else if (currentPage === 'contact_fr.html') {
+            document.getElementById('frOption').selected = true;
         }
-      })
-      .catch(() => {
-        alert("Network error. Please check your connection.");
-      });
-    }
-  </script>
-  <script src="js/script.js"></script>
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
+
